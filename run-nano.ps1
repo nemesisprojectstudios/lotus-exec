@@ -1,11 +1,11 @@
 # Lotus Nano - PowerShell one-liner to run without downloading
-# Usage: iwr https://raw.githubusercontent.com/nemesisprojectstudios/lotus-nano/main/run.ps1 | iex
-# Or: iwr https://raw.githubusercontent.com/nemesisprojectstudios/lotus-nano/main/run.ps1 -UseBasicParsing | iex
+# Usage: iwr https://raw.githubusercontent.com/nemesisprojectstudios/lotus-exec/main/run-nano.ps1 | iex
+# Or: iwr https://raw.githubusercontent.com/nemesisprojectstudios/lotus-exec/main/run-nano.ps1 -UseBasicParsing | iex
 
 # This one-liner downloads and runs the latest Lotus.Nano.exe from the releases
 # The executable is self-contained (no .NET install required)
 
-$repo = "nemesisprojectstudios/lotus-nano"
+$repo = "nemesisprojectstudios/lotus-exec"
 $assetName = "Lotus.Nano.exe"
 $downloadUrl = "https://github.com/$repo/releases/latest/download/$assetName"
 $tempPath = "$env:TEMP\Lotus.Nano.exe"
